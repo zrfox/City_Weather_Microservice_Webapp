@@ -2,21 +2,19 @@
 
 ## To Run Dev Build:
 
-__Front End__
-Double-click index.html in File Explorer or right click in VS code and select "Open with Five Server"
+Below are instructions on how to run the development build.
+
+NOTE: 
+Microservice A is run with python and has separate instructions listed below. 
+Microservices B, C, and D run with Node JS. 
 
 __A_microservice_(Python Development)__ 
 Double-click run_dev.bat in File Explorer or run the commands:  
     pip install -r requirements-dev.txt
     run_dev.bat
 
-__B, C, D microservices__
-Open a terminal for each microservice directory.
-cd into each directory.
-run 'npm install'
-run 'node script.js'
-
-
+NOTE:
+If any microserivce doesn't appear to be working on the frontend, you may need to refresh the browser and try again. 
 
 
 
