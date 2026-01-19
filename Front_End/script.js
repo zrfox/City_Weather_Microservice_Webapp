@@ -136,7 +136,7 @@ socket1.onmessage = function(event) {
             svg.style.height = '270px';
             svg.style.display = 'block';
             // padding recenters
-            svg.style.paddingLeft = '75px';
+            svg.style.paddingLeft = '70px';
         }
         
         imgExists = 1;
