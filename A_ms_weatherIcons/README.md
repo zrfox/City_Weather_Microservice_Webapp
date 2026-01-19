@@ -1,10 +1,37 @@
-## To Run
 
 
-__Development Build:__ 
-Double-click run_dev.bat or run the commands:  
+## To Run Dev Build:
+
+__Front End__
+Double-click index.html in File Explorer or right click in VS code and select "Open with Five Server"
+
+__A_microservice_(Python Development)__ 
+Double-click run_dev.bat in File Explorer or run the commands:  
     pip install -r requirements-dev.txt
     run_dev.bat
+
+__B, C, D microservices__
+Open a terminal for each microservice directory.
+cd into each directory.
+run 'npm install'
+run 'node script.js'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Weather Icons
 
