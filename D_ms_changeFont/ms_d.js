@@ -5,9 +5,6 @@ wss.on('connection', function connection(ws){
     console.log("client connected");
 
     ws.on('message', function(message){
-        //data = JSON.parse(message);
-
-       // theme_type = data.theme;
         
         jsonObj = changeFontRoll();
 

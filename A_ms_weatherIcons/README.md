@@ -5,8 +5,9 @@
 Below are instructions on how to run the development build.
 
 NOTE: 
-Microservice A is run with python and has separate instructions listed below. 
-Microservices B, C, and D run with Node JS. 
+-     Microservice A is run with python and has separate instructions listed below. 
+      Microservices B, C, and D run with Node JS. 
+-     The python script is run in a virtual environment. If VS Code says modules are missing etc, this can be ignored. 
 
 __A_microservice_(Python Development)__ 
 Double-click run_dev.bat in File Explorer or run the commands:  

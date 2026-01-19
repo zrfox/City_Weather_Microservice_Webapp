@@ -24,10 +24,7 @@ let c_temp;
 let socket3Exists = 0;
 let socket4Exists = 0;
     
-//let icon;
-//let speed;
 var imgElement; // uncommented. idk why it was commented out. 
-let imgExists = 0;
 
 // weather icons ms
 const socket1 = new WebSocket('ws://localhost:5555');
@@ -59,7 +56,6 @@ socket4.onmessage = function(event){
 
     data = JSON.parse(event.data);
     document.body.style.fontFamily = data.fontFamily;
-
 }
 
 function changeFontFunct(){
@@ -69,43 +65,22 @@ function changeFontFunct(){
 socket3.onmessage = function(event){
     console.log("socket3 data: ", event.data);
 
-
-
-
-
     data = JSON.parse(event.data);
-    //jsonTheme.themeURL = data.themeURL; //jasonTheme.theme = data? data.theme? No, just a json object that holds theme as well. 
-
-    /*if(socket3Element == 0)
-    {
-     socket3Element = 1; 
-        
-     changeThemeButton = document.createElement("button");
-    }*/
     document.body.style.backgroundImage = "url('"+ data.themeURL +"')"; //"url('"+ jsonTheme.themeURL +"')";
 
-    if(socket3Exists == 0)
-    {
-
+    if(socket3Exists == 0) {
         document.getElementsByClassName('inputContainer')[0].appendChild(changeThemeButton);
     }
 
-
-
     changeThemeButton.addEventListener("click", changeThemeFunct);
-
-
-
 }
 
 function changeThemeFunct(){
     if(socket3Open)
          socket3.send(JSON.stringify(jsonTheme));
-
-    
 }
 
-socket1.onmessage = function(event) {
+socket1.onmessage = function(event){
     console.log("socket1 data: ", event.data);
 
     var reader = new FileReader();
@@ -114,11 +89,6 @@ socket1.onmessage = function(event) {
         
         // DEBUG: Print the first 500 characters of the SVG
         console.log("Original SVG:", svgContent.substring(0, 500));
-        
-        // svgContent = svgContent.replace(
-        //     /viewBox="[^"]*"/,
-        //     'viewBox="300 300 300 300"'
-        // );
         
         // DEBUG: Print after replacement
         console.log("After replacement:", svgContent.substring(0, 500));
@@ -137,8 +107,7 @@ socket1.onmessage = function(event) {
             svg.style.display = 'block';
             // padding recenters
             svg.style.paddingLeft = '70px';
-        }
-        
+        }    
         imgExists = 1;
     };
     reader.readAsText(event.data);
