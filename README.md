@@ -4,8 +4,8 @@ Landing repo for City Weather webapp composed of 5 microservices. Part of OSU cu
 Frontend.
 https://github.com/zrfox/361-repo
 
-Microservice A. Theme generator.
-https://github.com/zrfox/ms_a
+Microservice A. Dynamic weather icons. (Created by partner per assignment criteria, modified by zrfox.)
+https://github.com/zrfox/weather_icons
 
 Microservice B. Converts Kelvin to Fahrenheit or Celsius.
 https://github.com/zrfox/ms_b_convertTemp
@@ -15,6 +15,3 @@ https://github.com/zrfox/ms_c
 
 Microservice D. Additional info
 https://github.com/zrfox/ms_d
-
-Microservice E. Dynamic weather icons. (Created by partner, modified by zrfox.)
-https://github.com/zrfox/weather_icons
