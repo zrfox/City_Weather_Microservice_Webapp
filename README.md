@@ -42,9 +42,11 @@ Double-click run_dev.bat in File Explorer or run the commands:
     run_dev.bat
 
 __B, C, D microservices__
-Open a terminal for each microservice B, C, and D.
+Open a terminal for each microservice B, C, D, and D.
 
-cd into each directory. (Directory names start with B_ms, C_ms, and D_ms)
+Open a terminal for server.js in Back_end (this runs the express server)
+
+cd into each directory. (B_ms, C_ms, D_ms, and Back_End)
 
 run 'npm run install:all' OR run 'npm install' in each directory (B, C, and D)
 

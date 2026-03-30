@@ -4,7 +4,6 @@ const formInput = document.querySelector(".form");
 const cityInput = document.querySelector(".city");
 const inputContainer = document.querySelector(".inputContainer");
 const weatherParent = document.querySelector(".weatherParent");
-/*const apiKey = ;  REMOVING KEY FROM FRONT END TO EXPRESS SERVER.*/
 
 let socket1Open = 0;
 let socket2Open = 0;
