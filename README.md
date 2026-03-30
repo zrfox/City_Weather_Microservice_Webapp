@@ -24,7 +24,7 @@ https://github.com/zrfox/ms_d
 Below are instructions on how to run the development build.
 
 __Add OpenWeather API Key__
-1. Acquire and OpenWeather API key and assign the key value to the OPEN_WEATHER_API_KEY environment variable in .env.example.
+1. Acquire an OpenWeather API key and assign the key value to the OPEN_WEATHER_API_KEY environment variable in ./Back_End/env.example.
 2. Change file name from .env.example to .env
 
 NOTE: 
