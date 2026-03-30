@@ -23,6 +23,10 @@ https://github.com/zrfox/ms_d
 
 Below are instructions on how to run the development build.
 
+__Add OpenWeather API Key__
+1. Acquire and OpenWeather API key and assign the key value to the OPEN_WEATHER_API_KEY environment variable in .env.example.
+2. Change file name from .env.example to .env
+
 NOTE: 
 -   Microservice A is run with python and has separate instructions listed below. 
     Microservices B, C, and D run with Node JS.
@@ -40,9 +44,9 @@ Double-click run_dev.bat in File Explorer or run the commands:
 __B, C, D microservices__
 Open a terminal for each microservice B, C, and D.
 
-cd into each directory. (Directories are named in the format of B_ms_serviceDescription)
+cd into each directory. (Directory names start with B_ms, C_ms, and D_ms)
 
-run 'npm install' in each directory
+run 'npm run install:all' OR run 'npm install' in each directory (B, C, and D)
 
 run 'node ms_b.js' in the B_ms_converTemp directory 
 

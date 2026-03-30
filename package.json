@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "install:all": "cd Back_End && npm install && cd ../B_ms_convertTemp && npm install && cd ../C_ms_changeBackground && npm install && cd ../D_ms_changeFont && npm install && cd ../Front_End && npm install"
+  }
+}
